@@ -9,19 +9,31 @@
 /* css for titlePage  */
 
 .titlePage {
-    background-color: #D6C9C9;
     height: 730px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2f3043;
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+      background: #2f3043;
+  }
+
 #elements {
+    position: relative;
     color: white;
     /* border: 1px solid; */
     display: inline-block;
     padding: 10px;
-    margin-top : 148px;
+    margin-top: 148px;
     margin-left: 270px;
 }
 
-h1{
+h1 {
     font-size: 60px;
 }
 
@@ -44,15 +56,26 @@ h1{
     height: 730px;
 }
 
+/* css for navbar */
 #navBar {
-    
-    background-color:rgb(243, 237, 233);
+    width: 100%;
+    position: fixed;
+    background-color: #2f3043;
     height: 80px;
+    top: 0;
+    /* left: 0;  */
+    transition: transform 0.2s;
+}
+
+.nav--hidden {
+    transform: translateY(-80px);
 }
 
 #navBar a {
-    color: gray;
+    color: white;
 }
+
+
 
 #nameLink {
     text-decoration: none;
@@ -66,7 +89,8 @@ h1{
 }
 
 
-#works, #about {
+#works,
+#about {
     text-decoration: none;
     color: white;
     /* border: 1px solid; */
@@ -82,21 +106,21 @@ h1{
 
 .thirdPage {
     height: 730px;
-    background-color: #9A9186;
+    background-color: rgb(213, 213, 213);
 }
 
 /* css for fourthPage */
 
 .fourthPage {
     height: 730px;
-    background-color: #88755d;
+    /* background-color: #88755d; */
 }
 
 /* css for aboutPage */
 
 .aboutPage {
     height: 730px;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 /* css for footer */
@@ -104,7 +128,7 @@ h1{
 .footer {
     height: 74px;
     background-color: rgb(213, 213, 213);
-    
+
 }
 
 /* css for images */
@@ -119,7 +143,7 @@ img {
     float: right;
     margin-right: 30px;
     margin-top: 75px;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
 }
 
@@ -132,7 +156,7 @@ img {
     padding: auto;
     margin-top: 125px;
     margin-left: 254px;
-    background-color: gray;
+    background-color: #565668;
     border-radius: 10px;
     box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.4);
 }
@@ -145,6 +169,16 @@ img {
     margin-top: 150px;
     margin-left: 20px;
     width: 320px;
+    color: white;
     /* background-color: white; */
-    
+
+}
+
+.learn-more {
+    border: none;
+    width : 100px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.4);
 }
