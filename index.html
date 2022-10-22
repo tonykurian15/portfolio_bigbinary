@@ -7,22 +7,24 @@
 <body>
     <!-- html for title page -->
     <div id="main">
-        <div class="titlePage" id="particles-js">
+        <div class="titlePage">
+            <video autoplay muted loop src="/assets/background-video1.mp4"></video>
             <div id="elements">
                 <h1>T O N Y <br> K U R I A N</h1>
                 <p id="desig">
-                    Full<br>
-                    blah<br>
-                    blah
+                    Engineer<br>
+                    Front-End Developer<br>
+                    
                 </p>
                 <button id="explore">Explore</button>
             </div>
         </div>
         <div id="navBar">
             <a id="nameLink" href="#">TONY KURIAN</a>
-            <a id="about" href="#">About Me</a>
-            <a id="works" href="#">My Works</a>
+            <a class="active-link" id="about" href="#">About Me</a>
+            <a class="active-link" id="works" href="#">My Works</a>
         </div>
+        <button title="To Top" id="back-to-top"><img src="/assets/up-arrow.png" height="50px" width="50px"></button>
         <div class="secondPage">
             <div class="card">
                 <div class="description">
@@ -30,36 +32,44 @@
                     <p>MoodSinger helps you to find the best songs for your current mood.</p>
                     <button class="learn-more" type="button">Learn More</button>
                 </div>
-                <img src="assets/moodpic.png" alt="MoodSinger">
+                <img class="card-images" src="assets/moodpic.png" alt="MoodSinger">
             </div>
 
         </div>
         <div class="thirdPage">
             <div class="card">
                 <div class="description">
-                    <h2>MoodSinger</h2>
-                    <p>MoodSinger helps you to find the best songs for your current mood.</p>
+                    <h2>BattleShip</h2>
+                    <p>BattleShip is a simple game to find hidden battleships. It's a fun game to pass time.</p>
                     <button class="learn-more" type="button">Learn More</button>
                 </div>
-                <img src="assets/BattleShippic.png" alt="BattleShip">
+                <img class="card-images" src="assets/BattleShippic.png" alt="BattleShip">
             </div>
 
         </div>
         <div class="fourthPage">
             <div class="card">
                 <div class="description">
-                    <h2>MoodSinger</h2>
-                    <p>MoodSinger helps you to find the best songs for your current mood.</p>
+                    <h2>H2H</h2>
+                    <p>H2H is a home to home service web application which provides solutions to customers day to day issues and needs.</p>
                     <button class="learn-more" type="button">Learn More</button>
                 </div>
-                <img src="assets/h2hpic.png" alt="H2H">
+                <img class="card-images" src="assets/h2hpic.png" alt="H2H">
             </div>
 
         </div>
         <div class="aboutPage">
 
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <p>©2022 Tony Kurian</p>
+            <div id="icons">
+                <a href="#instagram"><img class="icon-elements" src="assets/instagram-logo.png"></a>
+                <a href="#facebook"><img class="icon-elements" src="assets/facebook-logo.png"></a>
+                <a href="#linkedin"><img class="icon-elements" src="assets/linkedin-logo.png"></a>
+                <a href="#github"><img class="icon-elements" src="assets/github-logo.png"></a>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

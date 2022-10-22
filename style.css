@@ -1,6 +1,4 @@
 * {
-    /* text-align: center; */
-    /* border: 1px solid; */
     padding: 0;
     margin: 0;
     font-family: 'calibri';
@@ -15,18 +13,14 @@
     height: 100%;
     background: #2f3043;
 }
+video {
+    position: fixed;
+}
 
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-      background: #2f3043;
-  }
 
 #elements {
     position: relative;
     color: white;
-    /* border: 1px solid; */
     display: inline-block;
     padding: 10px;
     margin-top: 148px;
@@ -49,11 +43,20 @@ h1 {
     width: 160px;
 }
 
-/* css for secondPage */
+#explore:hover {
+    cursor: pointer;
+}
 
-.secondPage {
-    background-color: white;
+/* css for Pages */
+
+.secondPage, .fourthPage {
+    background-color: #FDFCF2;
     height: 730px;
+}
+
+.thirdPage, .aboutPage {
+    height: 730px;
+    background-color: #F5F3E5;
 }
 
 /* css for navbar */
@@ -63,7 +66,6 @@ h1 {
     background-color: #2f3043;
     height: 80px;
     top: 0;
-    /* left: 0;  */
     transition: transform 0.2s;
 }
 
@@ -75,6 +77,41 @@ h1 {
     color: white;
 }
 
+.active-link {
+    border-bottom: 1px solid;
+    padding: 0 50px 10px 50px;
+}
+
+.active-link:hover, .active-link:focus {
+    border-width: 4px;
+}
+
+
+#back-to-top {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    margin-bottom: 80px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 20px;
+    background: transparent;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+
 
 
 #nameLink {
@@ -82,10 +119,8 @@ h1 {
     color: white;
     font-size: 20px;
     display: inline-block;
-    /* padding-top: 10px; */
     margin-top: 24px;
     margin-left: 40px;
-    /* border: 1px solid; */
 }
 
 
@@ -93,35 +128,12 @@ h1 {
 #about {
     text-decoration: none;
     color: white;
-    /* border: 1px solid; */
     display: inline-block;
     float: right;
     margin-top: 24px;
-    margin-right: 40px;
+    margin-right: 8px;
 }
 
-
-
-/* css for thirdPage */
-
-.thirdPage {
-    height: 730px;
-    background-color: rgb(213, 213, 213);
-}
-
-/* css for fourthPage */
-
-.fourthPage {
-    height: 730px;
-    /* background-color: #88755d; */
-}
-
-/* css for aboutPage */
-
-.aboutPage {
-    height: 730px;
-    /* background-color: bisque; */
-}
 
 /* css for footer */
 
@@ -131,19 +143,35 @@ h1 {
 
 }
 
+.footer p {
+    margin-left: 484px;
+    margin-top: 28px;
+    display: inline-block;
+    color: white;
+}
+
+#icons {
+    display: inline-block;
+    float: right;
+    margin-top: 18px;
+    margin-right: 484px;
+}
+
+.icon-elements {
+    margin-left: 10px;
+    height: 28px;
+    width: 28px;
+}
+
 /* css for images */
 
-img {
+.card-images {
     height: 330px;
     width: 640px;
     border-radius: 10px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     float: right;
     margin-right: 30px;
     margin-top: 75px;
-    /* position: relative; */
     display: inline-block;
 }
 
@@ -156,7 +184,8 @@ img {
     padding: auto;
     margin-top: 125px;
     margin-left: 254px;
-    background-color: #565668;
+    /* background-color: #565668; */
+    background-image: linear-gradient(#2f3043, #8d8d95);
     border-radius: 10px;
     box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.4);
 }
@@ -170,8 +199,6 @@ img {
     margin-left: 20px;
     width: 320px;
     color: white;
-    /* background-color: white; */
-
 }
 
 .learn-more {
@@ -180,5 +207,14 @@ img {
     height: 40px;
     font-size: 16px;
     border-radius: 20px;
+    font-weight: bold;
+    color: #2f3043;
     box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.4);
+    margin-top: 28px;
+    background-color: white;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+    transform: scale(1.07);
 }
